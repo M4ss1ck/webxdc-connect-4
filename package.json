@@ -36,9 +36,9 @@
     "dist/"
   ],
   "scripts": {
-    "start": "concurrently --handle-input \"yarn:start-server\" \"yarn:start-browser\"",
-    "start-browser": "yarn workspace @kenrick95/c4-browser start",
-    "start-server": "yarn workspace @kenrick95/c4-server start-dev"
+    "start": "concurrently --handle-input \"pnpm:start-server\" \"pnpm:start-browser\"",
+    "start-browser": "cd browser && pnpm start",
+    "start-server": "cd server && pnpm start-dev"
   },
   "devDependencies": {
     "concurrently": "^6.2.1"
