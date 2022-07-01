@@ -28,7 +28,7 @@
     "dist/"
   ],
   "scripts": {
-    "build": "yarn clean && parcel build ./src/lib.ts",
+    "build": "pnpm clean && parcel build ./src/lib.ts",
     "clean": "shx rm -rf dist/",
     "prettier": "prettier --write \"./**/*.?(ts|html|scss|css)\"",
     "test": "jest"
